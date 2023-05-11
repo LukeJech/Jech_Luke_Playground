@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>It's go time</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="nav_bar" class="flex justify-center">
+            <h1 class="text-red-500 text-4xl mt-5">Welcome!</h1>
+        </div>
+        <div id="box_container" class="flex  flex-wrap  w-2/5 mt-4 mx-auto">
+
+            {%for i in range(num): %}   
+            <div class="w-24 h-24 rounded-md {{'bg-' + color + '-300'}} border-2 border-black mt-2 mx-1"></div>
+            {% endfor %}
+
+        </div>
+    </div>
+      
+
+</body>
+</html>
